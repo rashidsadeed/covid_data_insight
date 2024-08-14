@@ -1,4 +1,4 @@
-use portfolio_project;
+use covid_data;
 
 
 Select *
