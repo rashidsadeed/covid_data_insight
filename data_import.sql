@@ -154,3 +154,13 @@ Join covid_vaccine vax
 	On death.location = vax.location
 	and death.date = vax.date
 where death.continent is not null;
+
+
+-- get cvs output
+SELECT * 
+INTO OUTFILE '/path/to/file.csv'
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"' 
+LINES TERMINATED BY '\n'
+FROM PercentPopulationVaccinated;
+
